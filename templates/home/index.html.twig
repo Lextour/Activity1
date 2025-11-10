@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home - Symfony Security Demo</title>
+    <style>
+        body { 
+            font-family: 'Arial', sans-serif; 
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            max-width: 600px;
+            width: 90%;
+            text-align: center;
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        
+        .welcome-message {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 30px;
+        }
+        
+        .instructions {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            text-align: left;
+        }
+        
+        .instructions h3 {
+            color: #495057;
+            margin-top: 0;
+        }
+        
+        .credentials {
+            background: #e7f3ff;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+            margin: 10px;
+        }
+        
+        .btn:hover {
+            background: #764ba2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔐 Symfony Security Demo</h1>
+        
+        <div class="welcome-message">
+            {{ message }}
+        </div>
+        
+        <div class="instructions">
+            <h3>📋 Activity 2: In-Memory Authentication</h3>
+            <p>Test the protected dashboard with different user roles:</p>
+            
+            <div class="credentials">
+                <p><strong>Admin User:</strong> admin / admin123</p>
+                <p><strong>Regular User:</strong> user / user123</p>
+            </div>
+            
+            <p><strong>Expected Behavior:</strong></p>
+            <ul>
+                <li>Admin sees full access message</li>
+                <li>Regular user sees limited access message</li>
+                <li>Unauthenticated users get login prompt</li>
+            </ul>
+        </div>
+        
+        <a href="/dashboard" class="btn">🚀 Access Dashboard</a>
+        
+        <div style="margin-top: 30px; color: #6c757d; font-size: 14px;">
+            <p>Click the button above to test the authentication system</p>
+        </div>
+    </div>
+</body>
+</html>
