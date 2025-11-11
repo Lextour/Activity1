@@ -14,7 +14,7 @@ class DashboardController extends AbstractController
     public function index(): Response
     {
         $user = $this->getUser();
-
+        
         // Check user roles and set appropriate message
         if (in_array('ROLE_ADMIN', $user->getRoles())) {
             $message = "You are logged in as Admin. You have full access.";
