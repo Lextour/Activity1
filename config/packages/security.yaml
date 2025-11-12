@@ -7,10 +7,10 @@ security:
             memory:
                 users:
                     admin:
-                        password: "$2y$13$DFayVLa5NZQSavmRjRVbduZzrmdXu5owceSK3LEb5M.LcB0EN4IsS"
+                        password: "$2y$13$DFayVLa5NZQSavmRjRVbduZzrmdXu5owceSK3LEb5M.LcB0EN4IsS" #Pass 'Lester123'
                         roles: ["ROLE_ADMIN"]
                     user:
-                        password: "$2y$13$QMt6A.TBAf9X7QwTg8d9w.l57o4apktvt9vn4HrBzWCEgsLwBrIWa"
+                        password: "$2y$13$QMt6A.TBAf9X7QwTg8d9w.l57o4apktvt9vn4HrBzWCEgsLwBrIWa" #Pass 'Gwapo123'
                         roles: ["ROLE_USER"]
 
     firewalls:

@@ -18,12 +18,6 @@ class LoginController extends AbstractController
         ]);
     }
 
-            #[Route('/logout', name: 'app_logout')]
-            public function logout(): void
-    {
-            
-    }
-
         #[Route('/cancel-login', name: 'cancel_login')]
         public function cancel(): Response
     {
